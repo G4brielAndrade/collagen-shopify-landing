@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collagen+ — Sales Page (Case Study)</title>
+  <meta name="description" content="Case Study: single-product Shopify sales page (EN/DE) with conversion-focused UI." />
+  <meta name="theme-color" content="#07070b" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Collagen+ home">
+        <img
+          class="brand__logo"
+          src="https://www.svgrepo.com/download/530543/medicine-bottle.svg"
+          alt="Collagen+ logo"
+          width="38"
+          height="38"
+          loading="eager"
+        />
+        <div class="brand__text">
+          <div class="brand__name">Collagen<span class="gold">+</span></div>
+          <div class="brand__tag" data-i18n="top.tag">International • Single product</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#benefits" data-nav="benefits" data-i18n="nav.benefits">Benefits</a>
+        <a class="nav__link" href="#how" data-nav="how" data-i18n="nav.how">How it works</a>
+        <a class="nav__link" href="#proof" data-nav="proof" data-i18n="nav.proof">Proof</a>
+        <a class="nav__link" href="#offers" data-nav="offers" data-i18n="nav.offers">Offers</a>
+        <a class="nav__link" href="#faq" data-nav="faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang__btn" type="button" data-lang="de" aria-pressed="false">DE</button>
+        </div>
+
+        <a class="btn btn--gold" id="buyTop" href="#" data-i18n="cta.buyNow">Buy now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <div class="badge">
+            <span class="badge__dot"></span>
+            <span data-i18n="hero.badge">LIMITED LOT • WORLDWIDE SHIPPING</span>
+          </div>
+
+          <h1 class="hero__title" data-i18n="hero.title">
+            Premium collagen capsules designed for skin, hair & joints.
+          </h1>
+
+          <p class="hero__sub" data-i18n="hero.sub">
+            Conversion-focused long-form landing with Shopify-ready checkout flow.
+          </p>
+
+          <div class="hero__quick">
+            <div class="quick">
+              <div class="quick__k" data-i18n="hero.q1k">Rating</div>
+              <div class="quick__v">4.8/5</div>
+            </div>
+            <div class="quick">
+              <div class="quick__k" data-i18n="hero.q2k">Customers</div>
+              <div class="quick__v">50k+</div>
+            </div>
+            <div class="quick">
+              <div class="quick__k" data-i18n="hero.q3k">Supply</div>
+              <div class="quick__v" data-i18n="hero.q3v">30 days</div>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--gold btn--xl" id="buyHero" href="#">
+              <span data-i18n="cta.buyNow">Buy now</span>
+              <span class="btn__price" id="priceHero">$29.90</span>
+            </a>
+
+            <button class="btn btn--ghost btn--xl" id="scrollOffers" type="button" data-i18n="cta.seeOffers">
+              See offers
+            </button>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item"><span class="check">✓</span><span data-i18n="trust.t1">Secure Shopify checkout</span></div>
+            <div class="trust__item"><span class="check">✓</span><span data-i18n="trust.t2">Worldwide shipping options</span></div>
+            <div class="trust__item"><span class="check">✓</span><span data-i18n="trust.t3">Quality tested</span></div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="product">
+            <div class="product__glow" aria-hidden="true"></div>
+            <!-- image injected by JS as fallback-safe background -->
+            <div class="product__img js-bg" data-bg="hero" role="img" aria-label="Product image"></div>
+
+            <div class="product__foot">
+              <div class="stars" aria-label="Rating">★★★★★</div>
+              <div class="muted" data-i18n="hero.mediaNote">Capsules • Easy daily use • Bestseller</div>
+            </div>
+          </div>
+
+          <div class="miniGrid">
+            <div class="miniCard">
+              <div class="miniCard__k" data-i18n="mini.k1">Skin</div>
+              <div class="miniCard__v" data-i18n="mini.v1">Elasticity support</div>
+            </div>
+            <div class="miniCard">
+              <div class="miniCard__k" data-i18n="mini.k2">Hair</div>
+              <div class="miniCard__v" data-i18n="mini.v2">Strength & shine</div>
+            </div>
+            <div class="miniCard">
+              <div class="miniCard__k" data-i18n="mini.k3">Joints</div>
+              <div class="miniCard__v" data-i18n="mini.v3">Daily mobility</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS STRIP -->
+    <section class="strip" id="benefits" data-section="benefits">
+      <div class="wrap strip__grid">
+        <div class="stripCard">
+          <div class="stripCard__icon">✨</div>
+          <div>
+            <div class="stripCard__t" data-i18n="strip.s1t">Beauty support</div>
+            <div class="stripCard__d" data-i18n="strip.s1d">Skin hydration & glow</div>
+          </div>
+        </div>
+        <div class="stripCard">
+          <div class="stripCard__icon">💪</div>
+          <div>
+            <div class="stripCard__t" data-i18n="strip.s2t">Movement support</div>
+            <div class="stripCard__d" data-i18n="strip.s2d">Joints & mobility</div>
+          </div>
+        </div>
+        <div class="stripCard">
+          <div class="stripCard__icon">🧬</div>
+          <div>
+            <div class="stripCard__t" data-i18n="strip.s3t">Clean formula</div>
+            <div class="stripCard__d" data-i18n="strip.s3d">Transparent ingredients</div>
+          </div>
+        </div>
+        <div class="stripCard">
+          <div class="stripCard__icon">🌍</div>
+          <div>
+            <div class="stripCard__t" data-i18n="strip.s4t">Global sales</div>
+            <div class="stripCard__d" data-i18n="strip.s4d">Shopify checkout</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section" data-section="story">
+      <div class="wrap twoCol">
+        <div class="panel">
+          <h2 class="h2" data-i18n="story.title">A simple daily routine — built for consistency</h2>
+          <p class="p" data-i18n="story.p1">
+            Collagen+ is designed to be easy: capsule format, clean stack, and a long-form flow that explains value clearly.
+          </p>
+
+          <div class="callout">
+            <div class="callout__k" data-i18n="story.callk">What’s inside</div>
+            <div class="callout__v" data-i18n="story.callv">Hydrolyzed collagen + Vitamin C + Hyaluronic acid</div>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn btn--gold" id="buyStory" href="#" data-i18n="cta.buyNow">Buy now</a>
+            <button class="btn btn--ghost" id="scrollHow" type="button" data-i18n="cta.howItWorks">How it works</button>
+          </div>
+        </div>
+
+        <div class="imagePanel" aria-label="Product lifestyle image">
+          <!-- image injected by JS as fallback-safe background -->
+          <div class="imagePanel__img js-bg" data-bg="mid" role="img" aria-label="Product bottle image"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--alt" id="how" data-section="how">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="h2" data-i18n="how.title">How it works</h2>
+          <p class="p" data-i18n="how.sub">A step-by-step block commonly used on sales pages.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step__n">1</div>
+            <div>
+              <div class="step__t" data-i18n="how.s1t">Take daily</div>
+              <div class="step__d" data-i18n="how.s1d">Add it to your routine. Consistency matters.</div>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step__n">2</div>
+            <div>
+              <div class="step__t" data-i18n="how.s2t">Support your body</div>
+              <div class="step__d" data-i18n="how.s2d">Ingredients selected to complement wellness habits.</div>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step__n">3</div>
+            <div>
+              <div class="step__t" data-i18n="how.s3t">Track results</div>
+              <div class="step__d" data-i18n="how.s3d">Most people aim for 4–8 weeks of consistent use.</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <div class="card__icon">🧪</div>
+            <h3 class="card__t" data-i18n="how.c1t">Quality mindset</h3>
+            <p class="card__d" data-i18n="how.c1d">Clear copy + premium UI to build trust.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">📦</div>
+            <h3 class="card__t" data-i18n="how.c2t">Global fulfillment</h3>
+            <p class="card__d" data-i18n="how.c2d">Shipping and taxes calculated at Shopify checkout.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔒</div>
+            <h3 class="card__t" data-i18n="how.c3t">Secure payment</h3>
+            <p class="card__d" data-i18n="how.c3d">Checkout handled by Shopify.</p>
+          </article>
+        </div>
+
+        <div class="centerCta">
+          <a class="btn btn--gold btn--xl" id="buyHow" href="#">
+            <span data-i18n="cta.buyNow">Buy now</span>
+            <span class="btn__price" id="priceHow">$29.90</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section" id="proof" data-section="proof">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="h2" data-i18n="proof.title">Proof that builds trust</h2>
+          <p class="p" data-i18n="proof.sub">Guarantee + reviews — classic conversion blocks.</p>
+        </div>
+
+        <div class="proofGrid">
+          <div class="guarantee">
+            <div class="seal" aria-hidden="true">30</div>
+            <div>
+              <div class="guarantee__t" data-i18n="proof.gtitle">30-day guarantee</div>
+              <div class="guarantee__d" data-i18n="proof.gdesc">
+                If you’re not satisfied, you can request a refund according to the store policy.
+              </div>
+            </div>
+          </div>
+
+          <article class="review">
+            <div class="review__top">
+              <div class="avatar">A</div>
+              <div>
+                <div class="review__name">Ana</div>
+                <div class="review__meta" data-i18n="proof.r1m">Verified purchase</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review__text" data-i18n="proof.r1t">“Easy daily capsules. Noticed my skin looking better after a few weeks.”</p>
+          </article>
+
+          <article class="review">
+            <div class="review__top">
+              <div class="avatar">M</div>
+              <div>
+                <div class="review__name">Mark</div>
+                <div class="review__meta" data-i18n="proof.r2m">Verified purchase</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p class="review__text" data-i18n="proof.r2t">“Great for routine. Packaging looks premium.”</p>
+          </article>
+        </div>
+
+        <div class="centerCta">
+          <a class="btn btn--gold btn--xl" id="buyProof" href="#">
+            <span data-i18n="cta.buyNow">Buy now</span>
+            <span class="btn__price" id="priceProof">$29.90</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="section section--alt" id="offers" data-section="offers">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="h2" data-i18n="offers.title">Choose your offer</h2>
+          <p class="p" data-i18n="offers.sub">Three tiers — a very common sales-page pattern.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="priceCard">
+            <div class="priceCard__top">
+              <div class="priceCard__plan" data-i18n="offers.o1t">Starter</div>
+              <div class="pill" data-i18n="offers.o1b">1 bottle</div>
+            </div>
+            <div class="priceCard__price" id="offer1">$29.90</div>
+            <div class="priceCard__note" data-i18n="offers.o1n">Best to try</div>
+            <ul class="ticks">
+              <li><span class="check">✓</span><span data-i18n="offers.c1">Worldwide shipping</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c2">Secure checkout</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c3">Support included</span></li>
+            </ul>
+            <a class="btn btn--ghost btn--xl" id="buyOffer1" href="#" data-i18n="cta.buyNow">Buy now</a>
+          </article>
+
+          <article class="priceCard priceCard--best">
+            <div class="ribbon" data-i18n="offers.best">BEST VALUE</div>
+
+            <div class="priceCard__top">
+              <div class="priceCard__plan" data-i18n="offers.o2t">Most Popular</div>
+              <div class="pill" data-i18n="offers.o2b">3 bottles</div>
+            </div>
+            <div class="priceCard__price" id="offer2">$79.90</div>
+            <div class="priceCard__note" data-i18n="offers.o2n">Save more</div>
+            <ul class="ticks">
+              <li><span class="check">✓</span><span data-i18n="offers.c1">Worldwide shipping</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c4">Priority dispatch</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c5">Bonus guide</span></li>
+            </ul>
+            <a class="btn btn--gold btn--xl" id="buyOffer2" href="#" data-i18n="cta.buyNow">Buy now</a>
+          </article>
+
+          <article class="priceCard">
+            <div class="priceCard__top">
+              <div class="priceCard__plan" data-i18n="offers.o3t">Bundle</div>
+              <div class="pill" data-i18n="offers.o3b">6 bottles</div>
+            </div>
+            <div class="priceCard__price" id="offer3">$149.90</div>
+            <div class="priceCard__note" data-i18n="offers.o3n">Max savings</div>
+            <ul class="ticks">
+              <li><span class="check">✓</span><span data-i18n="offers.c1">Worldwide shipping</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c4">Priority dispatch</span></li>
+              <li><span class="check">✓</span><span data-i18n="offers.c6">Extended guarantee</span></li>
+            </ul>
+            <a class="btn btn--ghost btn--xl" id="buyOffer3" href="#" data-i18n="cta.buyNow">Buy now</a>
+          </article>
+        </div>
+
+        <div class="noteBox">
+          <div class="noteBox__t" data-i18n="offers.noteT">Note</div>
+          <div class="noteBox__d" data-i18n="offers.noteD">
+            Prices shown are for display only. Final price, taxes and shipping are calculated in Shopify checkout.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" data-section="faq">
+      <div class="wrap">
+        <div class="head">
+          <h2 class="h2" data-i18n="faq.title">FAQ</h2>
+          <p class="p" data-i18n="faq.sub">Remove objections before the final CTA.</p>
+        </div>
+
+        <div class="accordion" id="accordion">
+          <details class="acc" open>
+            <summary class="acc__q" data-i18n="faq.q1">When will I see results?</summary>
+            <div class="acc__a" data-i18n="faq.a1">Many people aim for 4–8 weeks of consistent daily use.</div>
+          </details>
+          <details class="acc">
+            <summary class="acc__q" data-i18n="faq.q2">Do you ship worldwide?</summary>
+            <div class="acc__a" data-i18n="faq.a2">Yes. Shipping and taxes are calculated at Shopify checkout.</div>
+          </details>
+          <details class="acc">
+            <summary class="acc__q" data-i18n="faq.q3">Is payment secure?</summary>
+            <div class="acc__a" data-i18n="faq.a3">Checkout is handled by Shopify with secure payment methods.</div>
+          </details>
+          <details class="acc">
+            <summary class="acc__q" data-i18n="faq.q4">How do I request a refund?</summary>
+            <div class="acc__a" data-i18n="faq.a4">Refund requests follow the store policy shown during checkout.</div>
+          </details>
+        </div>
+
+        <div class="finalCta">
+          <div>
+            <div class="finalCta__t" data-i18n="final.title">Final step: secure your order</div>
+            <div class="finalCta__d" data-i18n="final.desc">Click below to continue to Shopify checkout.</div>
+          </div>
+          <a class="btn btn--gold btn--xl" id="buyBottom" href="#" data-i18n="cta.buyNow">Buy now</a>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__row">
+            <div class="muted" data-i18n="footer.note">© Collagen+. All rights reserved.</div>
+            <div class="muted">Built by <strong>Gabriel Andrade</strong></div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="sticky" role="region" aria-label="Sticky buy bar">
+    <div class="wrap sticky__inner">
+      <div>
+        <div class="muted sm" data-i18n="sticky.k">Today</div>
+        <div class="sticky__price" id="priceSticky">$29.90</div>
+      </div>
+      <a class="btn btn--gold" id="buySticky" href="#" data-i18n="cta.buyNow">Buy now</a>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
