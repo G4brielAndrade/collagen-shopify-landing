@@ -48,10 +48,10 @@ Profissional de tecnologia com experiência em:
 - Desenvolvimento web
 
 GitHub:  
-[Github](https://github.com/G4brielAndrade)
+[Gabriel Andrade](https://github.com/G4brielAndrade)
 
 LinkedIn:  
-[Linkedin](https://www.linkedin.com/in/gabriel-andrade-25a479237/)
+[G4brielAndrade](https://www.linkedin.com/in/gabriel-andrade-25a479237/)
 
 ---
 
